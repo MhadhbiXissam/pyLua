@@ -248,7 +248,7 @@ def keyword__repr__(self) :
 keyword.__repr__  = keyword__repr__
 
 def USub__repr__(self) :
-	return f"{self.arg} = {self.value}"
+	return "-"
 USub.__repr__  = USub__repr__
 
 
