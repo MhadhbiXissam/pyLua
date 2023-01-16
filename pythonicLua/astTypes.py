@@ -303,3 +303,6 @@ class IfExp :
 		self.orelse = orelse
 
 
+class USub : 
+	def __init__(self) : 
+		pass
