@@ -107,3 +107,20 @@ local mm  = require("m.r.t.v")
 
 local v = (((w > 3)) and 1 or  0 )
 ```
+
+# How to use  : 
+## with sublime text : 
+*	download the project then extracted 
+*	create new build in sublime and put as build code  : 
+*	```json
+	subl = {
+	"shell_cmd": "python3 /path to ... /pythonicLua/pythonicLua.py $file"
+	}```
+*	when you need to export the generated code to certain file add to the python code a line "###put_here_path_to_write_the_generated_lua_code"
+
+## using transpiler a library  : 
+*	import the pythonicLua.py then call transpile_code function
+	```python
+	from pythonicLua import transpile_code
+	transpile_code(python_file,lua_code_file)
+	```
