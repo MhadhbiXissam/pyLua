@@ -96,6 +96,9 @@ class Sub :
 	def __init__(self) : 
 		pass
 
+class Div : 
+	def __init__(self) : 
+		pass
 
 class BinOp : 
 	def __init__(self,left , op, right) : 
