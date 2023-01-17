@@ -151,6 +151,9 @@ def Sub__repr__(self) :
 	return "-"
 Sub.__repr__  = Sub__repr__
 
+def Div__repr__(self) :
+	return "/"
+Div.__repr__  = Div__repr__
 
 def AugAssign__repr__(self) :
 	return f"{self.target} = {self.target} {self.op} ({self.value})"
@@ -158,7 +161,7 @@ AugAssign.__repr__  = AugAssign__repr__
 
 
 def BinOp__repr__(self) :
-	return f"{self.left} {self.op} {self.right}"
+	return f"({self.left} {self.op} {self.right})"
 BinOp.__repr__  = BinOp__repr__
 
 
@@ -298,5 +301,6 @@ ast_globals = {
 "Store" : Store,
 "Load" : Load , 
 "alias" : alias , 
-"USub" : USub
+"USub" : USub , 
+"Div" : Div
 }
