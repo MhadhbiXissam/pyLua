@@ -127,7 +127,7 @@ Not.__repr__  = Not__repr__
 
 
 def UnaryOp__repr__(self) :
-	return f"({self.op} {self.operand})"
+	return f"{self.op}{self.operand}"
 UnaryOp.__repr__  = UnaryOp__repr__
 
 
@@ -254,6 +254,10 @@ def USub__repr__(self) :
 	return "-"
 USub.__repr__  = USub__repr__
 
+def Assert__repr__(self) :
+	return f"assert({self.test}" + ")" if self.msg == None else ",{self.msg})"
+Assert.__repr__  = Assert__repr__
+
 
 ast_globals = {
 'Module' : Module,
@@ -302,5 +306,6 @@ ast_globals = {
 "Load" : Load , 
 "alias" : alias , 
 "USub" : USub , 
-"Div" : Div
+"Div" : Div , 
+"Assert" : Assert
 }
