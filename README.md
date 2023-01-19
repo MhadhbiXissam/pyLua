@@ -6,9 +6,12 @@ cd $HOME ; git clone "https://github.com/MhadhbiXissam/pythonicLua.git" ; cp $HO
 ```
 
 # How to use  : 
-## with sublime text : 
+## Sublime text : 
 *	make the python file with *.pylua extension  
 *	choose Build system to "pythonicLua"
+
+## Command line : 
+*	```python3 pythonicLua.py file_name.pylua ```
 
 
 # Example  : 
