@@ -2,7 +2,7 @@
 Transpiler from python to lua 
 # INSTALATION : 
 ```bash
-cd $HOME ; git clone "https://github.com/MhadhbiXissam/pythonicLua.git" ; cp $HOME/pythonicLua/pythonicLua/PythonicLua.sublime-syntax $HOME/.config/sublime-text/Packages/User/cp $HOME/pythonicLua/pythonicLua/pythonicLua.sublime-build $HOME/.config/sublime-text/Packages/User/
+cd $HOME ; git clone "https://github.com/MhadhbiXissam/pythonicLua.git" ; cp $HOME/pythonicLua/pythonicLua/PythonicLua.sublime-syntax $HOME/.config/sublime-text/Packages/User/ ; cp $HOME/pythonicLua/pythonicLua/pythonicLua.sublime-build $HOME/.config/sublime-text/Packages/User/
 ```
 
 # How to use  : 
