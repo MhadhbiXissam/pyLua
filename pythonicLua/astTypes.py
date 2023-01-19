@@ -309,3 +309,8 @@ class IfExp :
 class USub : 
 	def __init__(self) : 
 		pass
+
+class Assert : 
+	def __init__(self,test = list() , msg  = None ) : 
+		self.test = test
+		self.msg = msg
