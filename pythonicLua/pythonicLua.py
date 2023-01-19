@@ -7,7 +7,8 @@ def getEXPORT_FILE(file) :
 		for line in pyfile : 
 			if line.startswith("###") :
 				EXPORT_FILE = line.strip()[3:]
-	return EXPORT_FILE.strip()
+				EXPORT_FILE = EXPORT_FILE.strip()
+	return EXPORT_FILE
 
 
 
