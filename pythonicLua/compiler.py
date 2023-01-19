@@ -17,7 +17,7 @@ def Constant__repr__(self) :
 	if isinstance(self.value,bool)  : return repr(self.value).lower()
 	if isinstance(self.value,int) or isinstance(self.value,float)  : return repr(self.value)
 	if isinstance(self.value,str)  : return json.dumps(self.value)
-	if self.value == None : return repr(self.value)
+	if self.value == None : return "nil"
 Constant.__repr__  = Constant__repr__
 
 
