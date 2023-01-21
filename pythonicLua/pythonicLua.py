@@ -32,7 +32,7 @@ def transpile_code(file,export_file = None) :
 	if export_file != None : 
 		EXPORT_FILE = export_file
 	if EXPORT_FILE == None :
-		defaul_EXPORT_FILE = file[:-len(".pylua")] 
+		defaul_EXPORT_FILE = os.path.abspath(file)[:-len(".pylua")] 
 		print(code_generated , file = open(defaul_EXPORT_FILE , "w"))
 	else : 
 		print(code_generated , file = open(EXPORT_FILE , "w"))
