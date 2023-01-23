@@ -12,7 +12,7 @@ def getEXPORT_FILE(file) :
 
 
 
-def transpile_code(file,export_file = None) : 
+def transpile_code(file,export_file = None,log = True) : 
 	code = ""
 	with open(file) as buff :  code = ast.dump(ast.parse(buff.read()))
 	code_generated  = "--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
@@ -27,7 +27,7 @@ def transpile_code(file,export_file = None) :
 		print(code)
 		has_error = True
 	code_generated += "\n--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
-	if not has_error : print(code_generated)
+	if log and not has_error : print(code_generated)
 	EXPORT_FILE = getEXPORT_FILE(file)
 	if export_file != None : 
 		EXPORT_FILE = export_file
