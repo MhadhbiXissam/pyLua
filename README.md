@@ -7,10 +7,15 @@
 # How to use pylua : 
 example : 
 ```python 
-from  pylua import py2lua
+from  pylua import py2lua , python2lua
 
 py = "print(123)"
+# this will will use the formatter "LuaFormatter" , which will be reoved in the future versions  
 print(py2lua(py))
+
+# this will emit none formated code
+print(python2lua(py))
+
 
 
 
