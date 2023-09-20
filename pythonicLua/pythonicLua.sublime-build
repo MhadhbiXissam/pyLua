@@ -1,3 +1,0 @@
-{
-	"shell_cmd": "python3 ~/pythonicLua/pythonicLua/pythonicLua.py $file"
-}
